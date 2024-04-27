@@ -174,7 +174,7 @@ def main2():
         start()
         
         print(" ")
-        menus = input(" \033[1;97m[\033[1;92m?\033[1;97m] Enter ip Change time : ")
+        menus = input(" \033[1;97m[\033[1;92m?\033[1;97m] Enter ip Change time (second) : ")
         if menus.lower() =="s":
             os.system("clear")
             print(logo)
