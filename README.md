@@ -10,3 +10,15 @@ apt install python
 ```bash
 git clone https://github.com/EthicalUniverse/ip-changer.git
 ```
+
+## Usage
+
+```bash
+cd ip-changer
+python ip-changer.py
+```
+
+## Features
+- Redirect all the traffic to TOR network.
+- The Ability to change your IP address every [] seconds.
+- Show your public ip.
