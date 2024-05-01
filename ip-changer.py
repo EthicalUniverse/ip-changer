@@ -75,9 +75,10 @@ def main():
 	print(line)
 	print(" ")
 	print(f" \033[1;97m[\033[1;92m01\033[1;97m] Change IP")
-	print(f" \033[1;97m[\033[1;92m02\033[1;97m] Update IP Changer")
-	print(f" \033[1;97m[\033[1;92m03\033[1;97m] Help")
-	print(f" \033[1;97m[\033[1;92m04\033[1;97m] About")
+	print(f" \033[1;97m[\033[1;92m02\033[1;97m] Change IP (time)")
+	print(f" \033[1;97m[\033[1;92m03\033[1;97m] Update IP Changer")
+	print(f" \033[1;97m[\033[1;92m04\033[1;97m] Help")
+	print(f" \033[1;97m[\033[1;92m05\033[1;97m] About")
 	print(" ")
 	print(f" \033[1;97m[\033[1;92mX\033[1;97m] Exit")
 	print(" ")
@@ -88,19 +89,23 @@ def main():
 	manu = input (f" \033[1;97m[\033[1;92m?\033[1;97m] Select Option :\033[1;33m")
 	if manu in ['1','01']:
 		time.sleep(3)
-		main2()
+		start()
 		
 	elif manu in ['2','02']:
+		time.sleep(2)
+		main2();
+		
+	elif manu in ['3','03']:
          os.system("xdg-open https://github.com/EthicalUniverse/ip-changer.git")
          time.sleep(3)
          main()
          
-	elif manu in ['3','03']:
+	elif manu in ['4','04']:
  		time.sleep(2)
  		help();
         
 		
-	elif manu in ['4','04']:
+	elif manu in ['5','05']:
  		time.sleep(2)
  		about()
 
@@ -227,4 +232,4 @@ def help():
 if __name__ == '__main__':
     main()
 
-#Dev: Ekramul Hassan
+#Dev: Ethical Universe
